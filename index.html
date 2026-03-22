@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhammdip Lokhande | Aspiring Data Scientist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="particleCanvas"></canvas>
+    
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                DL
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#credentials" class="nav-link">Credentials</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+    </nav>
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="glitch-wrapper">
+                    <h1 class="glitch" data-text="DHAMMDIP LOKHANDE">DHAMMDIP LOKHANDE</h1>
+                </div>
+                <div class="typing-container">
+                    <p class="typing-text">
+                        <span class="typed-text"></span>
+                        <span class="cursor-blink">|</span>
+                    </p>
+                </div>
+                <p class="hero-subtitle">
+                    I work with real-world data to find patterns, build insights, and gradually move toward predictive systems. Currently learning 
+                    <span class="highlight">Data Analysis</span>, 
+                    <span class="highlight">SQL Handling</span>, & 
+                    <span class="highlight">ML Fundamentals</span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Let's Connect</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/dhammdiplokhande1595" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dhammdip-lokhande" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:dhammdiplokhande1@gmail.com" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <i class="fas fa-brain"></i>
+                    <p>Prompt Engineering </p>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-chart-line"></i>
+                    <p>Analytical Logic</p>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-code"></i>
+                    <p>Python</p>
+                </div>
+                <div class="floating-card card-4">
+                    <i class="fas fa-database"></i>
+                    <p>SQL & Databases</p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="title-number">01.</span> About Me
+            </h2>
+            <div class="about-grid">
+                <div class="about-text" data-aos="fade-right">
+                    <p>I am a <strong>Computer Science (Data Science) student</strong> interested in understanding how systems behave rather than only making them run.</p>
+                    
+                    <p>I define problems first, then explore multiple solutions before implementation and verify outputs for correctness. My goal is to grow from data analysis to building reliable intelligent systems.</p>
+                    
+                    <p>Currently, I am focusing on building a strong foundation in statistics, exploratory data analysis, and Python-based machine learning pipelines.</p>
+                    
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <h3 class="counter" data-target="3">0</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="status-text">∞</h3>
+                            <p>Continuous Learning</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="counter" data-target="6">0</h3>
+                            <p>Core Technologies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="code-content">
+                            <code>
+<span class="code-keyword">class</span> <span class="code-class">DataScientist</span>:
+    <span class="code-keyword">def</span> <span class="code-function">__init__</span>(self):
+        self.name = <span class="code-string">"Dhammdip Lokhande"</span>
+        self.role = <span class="code-string">"Aspiring Data Scientist"</span>
+        self.expertise = [
+            <span class="code-string">"Exploratory Data Analysis"</span>,
+            <span class="code-string">"Statistical Modeling"</span>,
+            <span class="code-string">"SQL Management"</span>,
+            <span class="code-string">"Python Automation"</span>
+        ]
+        self.goal = <span class="code-string">"Reliable Intelligent Systems"</span>
+    
+    <span class="code-keyword">def</span> <span class="code-function">approach</span>(self):
+        <span class="code-keyword">return</span> <span class="code-string">"Define, Explore, Implement, Verify"</span>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="skills-section">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">
+            <span class="title-number">02.</span> Technical Dashboard
+        </h2>
+        
+        <div class="dashboard-wrapper" data-aos="zoom-in">
+            <div class="db-sidebar">
+                <button class="db-tab active" onclick="switchTab('programming', event)">
+                    <i class="fas fa-code"></i> Programming
+                </button>
+                <button class="db-tab" onclick="switchTab('dataTools', event)">
+                    <i class="fas fa-database"></i> Data Tools
+                </button>
+                <button class="db-tab" onclick="switchTab('concepts', event)">
+                    <i class="fas fa-lightbulb"></i> Concepts
+                </button>
+                <button class="db-tab" onclick="switchTab('otherTools', event)">
+                    <i class="fas fa-tools"></i> Other Tools
+                </button>
+            </div>
+
+            <div class="db-content">
+                <div class="db-grid">
+                    <div class="db-chart-container">
+                        <canvas id="skillsChart"></canvas>
+                        <div class="chart-center-text">
+                            <span id="chart-percent">80%</span>
+                            <small>Competency</small>
+                        </div>
+                    </div>
+                    <div class="db-bars-container" id="bars-display">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<section id="credentials" class="credentials-section">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">
+            <span class="title-number">03.</span> Certifications & Internships
+        </h2>
+
+        <div class="credentials-wrapper">
+            <div class="cred-column" data-aos="fade-right">
+                <h3 class="column-subtitle"><i class="fas fa-certificate"></i> Certifications</h3>
+                <div class="cred-list">
+                    <div class="cred-item-alt">
+                        <div class="cred-content">
+                            <h4>AI Fundamentals</h4>
+                            <p>Issued by IBM SkillsBuild | Verified via Credly</p>
+                            <a href="https://www.credly.com/badges/4f6e71b6-9e33-4e6e-8746-6e87fef3dbf7/public_url" target="_blank" class="cred-link-minimal">Verify Credential <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="cred-item-alt">
+                        <div class="cred-content">
+                            <h4>Python Using AI</h4>
+                            <p>Issued by AI for Techies</p>
+                            <a href="#" class="cred-link-minimal">View Badge <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="cred-item-alt academic-highlight">
+                        <div class="cred-content">
+                            <h4>Department Rank Holder</h4>
+                            <p>3rd Topper (Sem 3) & 2nd Topper (Sem 4)</p>
+                            <div class="multi-links">
+                                <a href="#" class="cred-link-minimal">Sem 3 Cert</a>
+                                <a href="#" class="cred-link-minimal">Sem 4 Cert</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cred-column" data-aos="fade-left">
+                <h3 class="column-subtitle"><i class="fas fa-briefcase"></i> Internships</h3>
+                <div class="cred-list">
+                    <div class="intern-card" data-aos="fade-up">
+                        <div class="intern-header">
+                            <span class="date-badge">July - Aug 2024</span>
+                            <div class="intern-icon"><i class="fas fa-laptop-code"></i></div>
+                        </div>
+                        <div class="intern-body">
+                            <h4>Data Analysis Intern</h4>
+                            <p class="company">Cognifyz Technologies</p>
+                            <ul class="intern-tasks">
+                                <li>Exploratory Data Analysis (EDA) on restaurant datasets</li>
+                                <li>Pattern extraction for pricing and delivery behavior</li>
+                            </ul>
+                            <a href="https://drive.google.com/file/d/1DsepCRZLCrzqY8KeihOE9Lx14SfL23IF/view?usp=drivesdk" target="_blank" class="btn-resume-gradient btn-small">
+                                <i class="fas fa-file-contract"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="intern-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="intern-header">
+                            <span class="date-badge">10 Weeks | Cohort 15</span>
+                            <div class="intern-icon"><i class="fab fa-aws"></i></div>
+                        </div>
+                        <div class="intern-body">
+                            <h4>AWS Academy Graduate - Generative AI</h4>
+                            <p class="company">AICTE - EduSkills Virtual Internship</p>
+                            <ul class="intern-tasks">
+                                <li>Mastered AWS Cloud fundamentals and GenAI concepts.</li>
+                                <li>Built industry-ready AI solutions using AWS tools.</li>
+                                <li>Participated in industry mentoring and assessments.</li>
+                            </ul>
+                            <a href="https://drive.google.com/file/d/15A5BwGbCmaFFJGERmyUNcxb4LAkmFbq9/view?usp=drivesdk" target="_blank" class="btn-resume-gradient btn-small">
+                                <i class="fas fa-certificate"></i> View Certificate 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <div class="cv-center-container" data-aos="fade-up">
+            <a href="Dhammdip_Lokhande_Resume.pdf" class="btn-resume-gradient" download>
+                <i class="fas fa-file-download"></i>
+                <span>Download Full Resume</span>
+            </a>
+            <p class="cv-tagline">Available for Data Science Internships & Projects</p>
+        </div>
+    </div>
+</section>
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="title-number">04.</span> Projects
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Data Visualization</span>
+                        <h3>Super Store Sales Dashboard</h3>
+                        <p>Built an interactive dashboard to analyze sales trends, regional performance, and category insights using KPI metrics and monthly analysis.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-check-circle"></i>
+                                <span>KPI Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Exploratory Data Analysis</span>
+                        <h3>Restaurant Data Analysis</h3>
+                        <p>Analyzed cuisines, ratings, pricing patterns, and delivery behavior to extract meaningful patterns from a real dataset during Cognifyz internship.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>NumPy</span>
+                            <span>Seaborn</span>
+                            <span>EDA</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Pattern Extraction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Predictive Analysis</span>
+                        <h3>Sales Intelligence & Forecast</h3>
+                        <p>Developing a system that analyzes historical sales and predicts future demand to support decision-making. (In Progress)</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Statistics</span>
+                            <span>Time-Series</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-spinner"></i>
+                                <span>In Progress</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">
+            <span class="title-number">05.</span> Get In Touch
+        </h2>
+        
+        <div class="contact-dashboard" data-aos="zoom-in">
+            <div class="contact-info-side">
+                <h3 class="side-title">Let's Connect</h3>
+                <p class="contact-desc">Currently open to **Data Science internships** and collaborative projects. Feel free to reach out!</p>
+                
+                <div class="info-list">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>dhammdiplokhande1@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 8975934844</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-location-dot"></i>
+                        <span>Nagpur, Maharashtra</span>
+                    </div>
+                </div>
+
+                <div class="social-pills">
+    <a href="https://github.com/dhammdiplokhande1595" target="_blank" class="pill">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/dhammdip-lokhande" target="_blank" class="pill">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="mailto:dhammdiplokhande1@gmail.com" class="pill">
+        <i class="fas fa-envelope"></i>
+    </a>
+</div>
+            </div>
+
+            <div class="contact-form-side">
+                <form action="https://formspree.io/f/your_form_id" method="POST" id="contact-form">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" rows="4" placeholder="How can I help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-resume-gradient btn-send">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Dhammdip Lokhande. Built with passion for data science.</p>
+            <div class="footer-links">
+                <a href="#home">Back to Top</a>
+            </div>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
